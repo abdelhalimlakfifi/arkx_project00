@@ -1,0 +1,56 @@
+html,
+body {
+  margin: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  max-width: 80vw;
+  border-radius: 20px;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+}
+.home > * {
+}
+.navbar {
+  background-color: #50769c;
+  height: 6vh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+img {
+  margin: 10px;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 90px;
+  height: 30px;
+}
+
+.aboutus {
+  display: flex;
+  align-items: center;
+}
+
+.flexgrid {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 13px;
+}
