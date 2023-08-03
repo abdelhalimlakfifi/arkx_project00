@@ -4,130 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <main>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Open Sans",sans-serif;
+            box-sizing: border-box;
+        }
 
-        <style>
-            *{
-                margin: 0;
-                padding: 0;
-                font-family: "Open Sans",sans-serif;
-                box-sizing: border-box;
+        body{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f1f1f1;
+        }
+
+        @keyframes popUp {
+            0% {
+                transform: scale(0);
             }
-
-            body{
-                min-height: 100vh;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: #f1f1f1;
+            60% {
+                transform: scale(1.1);
             }
-
-            @keyframes popUp {
-                0% {
-                    transform: scale(0);
-                }
-                60% {
-                    transform: scale(1.1);
-                }
-                100% {
-                    transform: scale(1);
-                }
+            100% {
+                transform: scale(1);
             }
+        }
 
+        .about-section{
+            background: url(./laptop.jpg) no-repeat left;
+            background-size: 55%;
+            background-color: #fdfdfd;
+            overflow:hidden;
+            padding: 0px;
+            animation: popUp 1s ease;
+        }
+        .inner-container{
+            width: 55%;
+            float: right;
+            background-color: #fdfdfd;
+            padding: 150px;
+        }
+        .inner-container h1{
+            margin-bottom: 30px;
+            font-size: 30px;
+            font-size: 900;
+        }
+        .text{
+            font-size: 13px;
+            color: #545454;
+            line-height: 30px;
+            text-align: justify;
+            margin-bottom: 40px;
+        }
+        .skills{
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            font-size: 13px;
+        }
+        .two{
+            display: grid;
+            grid-template-columns: 1fr;
+            font-weight: 700;
+            font-size: 13px;
+        }
+        .two h2{
+            text-align: center;
+            font-size: 30px;
+            font-size: 900;
+        }
+        .two p{
+            text-align: center;
+            font-weight: 700;
+            font-size: 13px;
+            padding: 65px;
+            color: #545454;
+
+        }
+        .two a{
+            text-align: center;
+            font-weight: 700;
+            font-size: 13px;
+            padding: 65px;
+        }
+
+        @media screen and (max-width:1200px){
+            .inner-container{
+                padding: 80px;
+            }
+            
+        }
+
+        @media screen and (max-width:1000px){
             .about-section{
-                background: url(./laptop.jpg) no-repeat left;
-                background-size: 55%;
-                background-color: #fdfdfd;
-                overflow:hidden;
-                padding: 0px;
-                animation: popUp 1s ease;
+                background-size: 100%;
+                padding: 100px 40px;
             }
             .inner-container{
-                width: 55%;
-                float: right;
-                background-color: #fdfdfd;
-                padding: 150px;
+                width: 100%;
             }
-            .inner-container h1{
-                margin-bottom: 30px;
-                font-size: 30px;
-                font-size: 900;
-            }
-            .text{
-                font-size: 13px;
-                color: #545454;
-                line-height: 30px;
-                text-align: justify;
-                margin-bottom: 40px;
-            }
-            .skills{
-                display: flex;
-                justify-content: space-between;
-                font-weight: 700;
-                font-size: 13px;
-            }
-            .two{
-                display: grid;
-                grid-template-columns: 1fr;
-                font-weight: 700;
-                font-size: 13px;
-            }
-            .two h2{
-                text-align: center;
-                font-size: 30px;
-                font-size: 900;
-            }
-            .two p{
-                text-align: center;
-                font-weight: 700;
-                font-size: 13px;
-                padding: 65px;
-                color: #545454;
+        }
 
+        @media screen and (max-width:600px){
+            .about-section{
+                padding: 0;
             }
-            .two a{
-                text-align: center;
-                font-weight: 700;
-                font-size: 13px;
-                padding: 65px;
+            .inner-container{
+                padding: 60px;
             }
+        }
+        .ourwhy{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20%;
+            padding: 100px;
+            background-color: #50769C;
+        }
 
-            @media screen and (max-width:1200px){
-                .inner-container{
-                    padding: 80px;
-                }
-                
-            }
+    </style>
+    <link rel="stylesheet" href="contactUs.css">
+</head>
+<body>
+    <main >
 
-            @media screen and (max-width:1000px){
-                .about-section{
-                    background-size: 100%;
-                    padding: 100px 40px;
-                }
-                .inner-container{
-                    width: 100%;
-                }
-            }
-
-            @media screen and (max-width:600px){
-                .about-section{
-                    padding: 0;
-                }
-                .inner-container{
-                    padding: 60px;
-                }
-            }
-            .ourwhy{
-                display: grid;
-                grid-template-columns: repeat(2,1fr);
-                gap: 40% 15%;
-                padding: 65px;
-                background-color: #50769C;
-            }
-
-        </style>
+        
         <div class="about-section">
             <div class="inner-container">
                 <h1>All about Jakarta</h1>
@@ -194,6 +196,65 @@
                     Get used to work with a team
                 </p>
             </div>
+        </section>
+
+        <section class="meetUs">
+            <div class="containerOut">
+                <div class="disc">
+                  <h1>Meet our amazing team members</h1>
+                </div>
+                <div class="pic">
+                  <div class="picCon picCont">
+                    <div class="teamimg"><img src="./assets/teamPic.png" class="teampic"></div>
+                    <div class="fname">
+                      <span class="fName">Rachid</span>
+                      <span  class="lName"> handaoui</span>
+                    </div>
+                    <div class="links">
+                        <a href="" class="link"><img class="icon" src="./assets/email.svg"></a>
+                        <a href="" class="link"><img class="icon" src="./assets/github.svg"></a>
+                        <a href="" class="link"><img class="icon" src="./assets/linkedin.svg"></a>
+                    </div>
+                  </div>
+                  <div class="picCon picCont">
+                    <div class="teamimg"><img src="./assets/teamPic.png" class="teampic"></div>
+                    <div class="fname">
+                      <span class="fName">Salma</span>
+                      <span  class="lName"> EL halba</span>
+                    </div>
+                    <div class="links">
+                        <a href="" class="link"><img class="icon" src="./assets/email.svg"></a>
+                        <a href="" class="link"><img class="icon" src="./assets/github.svg"></a>
+                        <a href="" class="link"><img class="icon" src="./assets/linkedin.svg"></a>
+                    </div>
+                  </div>
+                  <div class="picCon picConb">
+                    <div class="teamimg"><img src="./assets/teamPic.png" class="teampic"></div>
+                    <div class="fname">
+                      <span class="fName">Abdelhalim</span>
+                      <span  class="lName"> Lakfifi</span>
+                    </div>
+                    <div class="links">
+                        <a href="" class="link"><img class="icon" src="./assets/email.svg"></a>
+                        <a href="" class="link"><img class="icon" src="./assets/github.svg"></a>
+                        <a href="" class="link"><img class="icon" src="./assets/linkedin.svg"></a>
+                    </div>
+                  </div>
+                  <div class="picCon picConb">
+                    <div class="teamimg"><img src="./assets/teamPic.png" class="teampic"></div>
+                    <div class="fname">
+                      <span class="fName">Salah Eddine</span>
+                      <span  class="lName"> El menyiy</span>
+                    </div>
+                    <div class="links">
+                        <a href="" class="link"><img class="icon" src="./assets/email.svg"></a>
+                        <a href="" class="link"><img class="icon" src="./assets/github.svg"></a>
+                        <a href="" class="link"><img class="icon" src="./assets/linkedin.svg"></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- <a href="mailto:name@email.com">Link text</a> -->
+              </div>
         </section>
 
     </main>
