@@ -138,23 +138,25 @@ a {
     background-color: white;
     border-radius: 10px;
     padding: 40px;
-    
-  }
-  
-  .mainOverview > p {
+
+}
+
+.mainOverview>p {
     font-size: 20px;
     font-weight: 500;
-  }
+}
 
-  #navbar {
+#navbar {
     overflow: hidden;
     display: flex;
     justify-content: space-around;
     background-color: #50769c;
     border-radius: 0px 0px 10px 10px;
-  }
-  
-  #navbar a, .menu {
+    z-index: 9;
+}
+
+#navbar a,
+.menu {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -164,14 +166,69 @@ a {
     font-size: 20px;
     font-weight: 500;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
+}
 
-  .sticky {
+.sticky {
     position: fixed;
     top: 0;
     width: 66.5%;
-  }
-  
-  .sticky + .content {
+}
+
+.sticky+.content {
     padding-top: 60px;
-  } 
+}
+
+.gridTitle {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.one h1 {
+    text-align: center;
+
+    padding-bottom: 5px;
+}
+
+.one h1:before {
+    width: 28px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    margin-left: -14px;
+    background-color: #50769c;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.one h1:after {
+    width: 100px;
+    height: 1px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 25px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: #50769c;
+}
+
+.one {
+    position: relative;
+    background: #f8f8f8;
+    width: 90%;
+    max-width: 500px;
+    padding: 2em;
+    margin: 1.5em auto;
+    border: 3px solid rgba(0, 0, 0, 0.08);
+}
+
