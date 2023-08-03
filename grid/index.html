@@ -97,7 +97,7 @@
                 </div>
             </div>
             <div class="container">
-                <div class="flex">
+                <div class="flex mastringCss">
                     <img src="./assets/grid.svg" alt="">
                     <div class="text1_container">
                         <h2>Mastering CSS Grid: Unleashing the Power of Two-Dimensional Layouts</h2>
@@ -116,12 +116,13 @@
                 </div>
 
 
-                <div>
+                <div class="overviewContainer">
                     <h3>
                         Overview
                     </h3>
-                    So what can you do with grid? Grid layouts have the following features. You'll learn about all of
-                    them in this guide.
+                    
+                    <p class="overviewText">So what can you do with grid? Grid layouts have the following features. You'll learn about all of them in this guide.</p>
+
                     <div class="parent">
                         <div class="div1">
                             <div class="task" draggable="true">
@@ -224,9 +225,163 @@
                     </div>
                 </div>
 
+                <hr class="dashed">
 
+
+                <div>
+                    <div class="ten">
+                        <h1>Grid terminology</h1>
+                    </div>
+
+
+
+                    <div style="display: flex; justify-content: center;">
+                        <div class="section">
+                            <h1>Grid lines</h1>
+                            <div class="semititle">
+                                <p>
+                                    Grid comes with a bunch of new terminology as it's the first time CSS has had a real layout system.
+                                </p>
+                                <br>
+                                <p>
+                                    Lines are numbered starting from 1, with the numbering following the writing mode and script direction of the component. This means that column line 1 will be on the left in a left-to-right language such as English, and on the right in a right-to-left language such as Arabic.
+                                </p>
+
+                                <img src="./assets/image01.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div style="display: flex; justify-content: center;">
+                        <div class="section">
+                            <h1>Grid tracks</h1>
+                            <div class="semititle">
+                                <p>
+                                    A track is the space between two grid lines. A row track is between two row lines and a column track between two column lines. When we create our grid we create these tracks by assigning a size to them.
+                                </p>
+                                <br>
+
+                                <img src="./assets/image02.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div style="display: flex; justify-content: center;">
+                        <div class="section">
+                            <h1>Grid cell</h1>
+                            <div class="semititle">
+                                <p>
+                                    A grid cell is the smallest space on a grid defined by the intersection of row and column tracks. It's just like a table cell or a cell in a spreadsheet. If you define a grid and don't place any of the items they will automatically be laid out one item into each defined grid cell.
+                                </p>
+                                <br>
+
+                                <img src="./assets/image03.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div style="display: flex; justify-content: center;">
+                        <div class="section">
+                            <h1>Grid area</h1>
+
+                            <div class="semititle">
+                                <p>
+                                    Several grid cells together. Grid areas are created by causing an item to span over multiple tracks.
+                                </p>
+                                <br>
+
+                                <img src="./assets/image04.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; justify-content: center;">
+                        <div class="section">
+                            <h1>Gaps</h1>
+
+                            <div class="semititle">
+                                <p>
+                                    A gutter or alley between tracks. For sizing purposes these act like a regular track. You can't place content into a gap but you can span grid items across it.
+                                </p>
+                                <br>
+
+                                <img src="./assets/image05.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; justify-content: center;">
+                        <div class="section">
+                            <h1>Grid container</h1>
+
+                            <div class="semititle">
+                                <p>
+                                    The HTML element which has display: grid applied, and therefore creates a new grid formatting context for the direct children.
+                                </p>
+                                <br>
+
+                                <pre rel="CSS">
+                                    <code>
+                                        .container {
+                                            display: grid;
+                                        }
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; justify-content: center;">
+                        <div class="section">
+                            <h1>Grid item </h1>
+
+                            <div class="semititle">
+                                <p>
+                                    A grid item is an item which is a direct child of the grid container.
+                                </p>
+                                <br>
+
+                                <pre rel="CSS">
+                                    <code>
+                                        &ltdiv class="container"&gt
+                                            &ltdiv class="item"&gt&lt/div&gt
+                                            &ltdiv class="item"&gt&lt/div&gt
+                                            &ltdiv class="item"&gt&lt/div&gt
+                                        &lt/div&gt
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div style="display: flex; justify-content: center;">
+                        <div class="section">
+                            <h1>Grid item </h1>
+
+                            <div class="semititle">
+                                <p>
+                                    A grid item is an item which is a direct child of the grid container.
+                                </p>
+                                <br>
+
+                                <pre rel="CSS">
+                                    <code>
+                                        &ltdiv class="container"&gt
+                                            &ltdiv class="item"&gt&lt/div&gt
+                                            &ltdiv class="item"&gt&lt/div&gt
+                                            &ltdiv class="item"&gt&lt/div&gt
+                                        &lt/div&gt
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
         </div>
     </main>
     <script>

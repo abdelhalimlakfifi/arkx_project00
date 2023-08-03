@@ -297,10 +297,18 @@ a {
 .text1_container>.text1 {
     font-size: 20px;
     margin-top: 20px;
-    margin-top: 60px;
     text-indent: 50px;
 }
 
+.overviewText{
+    font-size: 25px;
+}
+
+hr.dashed {
+    border-top: 3px dashed #bbb;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
 
 
 
@@ -366,7 +374,7 @@ a {
     font-size: 12px;
     color: #ffffff;
     background-color: #1389eb;
-    font-size: 25px;
+    font-size: 25px; 
 }
 
 .tags {
@@ -374,7 +382,90 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+}
+
+.mastringCss{
+    margin-right: 3rem;
 }
 
 
+.overviewContainer{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.overviewContainer > h3{
+    font-size: 34px;
+    margin-top: 20px;
+}
+
+.ten{
+    display: flex;
+    justify-content: center;
+}
+.ten h1 {
+    font-size:34px; font-weight:500; text-transform:uppercase;
+}
+.ten h1:before {
+    background-color: #50769c;
+    border-radius: 0.25rem;
+    content: '';
+    display: block;
+    height: 0.25rem;
+    width: 42px;
+    margin-bottom: 1.25rem;
+}
+
+.section{
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+.semititle > p{
+    font-size: 22px;
+    text-align: justify;
+}
+
+.semititle > img{
+    width: 100%;
+}
+
+
+
+pre {
+    background: white;
+    clear: both;
+    color: #3aaebf;
+    font-family: 'Inconsolata', monospace;
+    hyphens: none;
+    line-height: 2rem;
+    min-width: 100%;
+    position: relative;
+    word-break: normal;
+    border: 1px solid #787878;
+    border-radius: 4px;
+  }
+  
+  pre[rel]::before {
+    display: flex;
+    padding-top: 0;
+  }
+  
+  pre[rel]::before {
+      left: auto;
+      position: relative;
+      top: auto;
+      width: 30px;
+  }
+  pre[rel]::before {
+      background: #50769c;
+      color: #f1f8f9;
+      content: attr(rel);
+      left: 0;
+      padding: 1px 0;
+      position: absolute;
+      text-indent: 15px;
+      top: 0;
+      height: 100%;
+      writing-mode: vertical-lr;
+  }
