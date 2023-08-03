@@ -71,17 +71,17 @@
 
     <main class="mainOverview">
         <div id="navbar">
-            <a class="active" href="javascript:void(0)">Overview</a>
-            <a class="active" href="javascript:void(0)">Justify-content</a>
-            <a href="javascript:void(0)">Align-items</a>
-            <a href="javascript:void(0)">Column-template</a>
-            <a href="javascript:void(0)">Row-template</a>
+            <a class="active" href="#grid">Grid</a>
+            <a class="active" href="#overview">Overview</a>
+            <a href="#grid_terminology">Grid Terminology</a>
+            <a href="#grid_container">Grid container</a>
+            <a href="#rowColumns">Rows and columns</a>
         </div>
 
 
 
         <div class="main">
-            <div class="one">
+            <div class="one" id="grid">
                 <h1 class="gridTitle">Grid</h1>
             </div>
             <div style="text-align: center;">
@@ -117,7 +117,7 @@
 
 
                 <div class="overviewContainer">
-                    <h3>
+                    <h3 id="overview">
                         Overview
                     </h3>
                     
@@ -230,7 +230,7 @@
 
                 <div>
                     <div class="ten">
-                        <h1>Grid terminology</h1>
+                        <h1 id="grid_terminology">Grid terminology</h1>
                     </div>
 
 
@@ -315,7 +315,7 @@
 
                     <div style="display: flex; justify-content: center;">
                         <div class="section">
-                            <h1>Grid container</h1>
+                            <h1 id="grid_container">Grid container</h1>
 
                             <div class="semititle">
                                 <p>
@@ -360,30 +360,76 @@
 
                     <div style="display: flex; justify-content: center;">
                         <div class="section">
-                            <h1>Grid item </h1>
+                            <h1 id="rowColumns">Rows and columns </h1>
 
                             <div class="semititle">
                                 <p>
-                                    A grid item is an item which is a direct child of the grid container.
+                                    To create a basic grid you can define a grid with three column tracks, two row tracks and a 10 pixel gap between the tracks as follows.
                                 </p>
                                 <br>
 
                                 <pre rel="CSS">
                                     <code>
-                                        &ltdiv class="container"&gt
-                                            &ltdiv class="item"&gt&lt/div&gt
-                                            &ltdiv class="item"&gt&lt/div&gt
-                                            &ltdiv class="item"&gt&lt/div&gt
-                                        &lt/div&gt
+                                        .container {
+                                            display: grid;
+                                            grid-template-columns: 5em 100px 30%;
+                                            grid-template-rows: 200px auto;
+                                            gap: 10px;
+                                        }
                                     </code>
                                 </pre>
+
+                                <p>
+                                    This grid demonstrates many of the things described in the terminology section. It has three column tracks. Each track uses a different length unit. It has two row tracks, one using a length unit and the other auto. When used as a track sizing auto can be thought of as being as big as the content. Tracks are auto sized by default.
+
+                                    If the element with a class of .container has child items, they will immediately lay out on this grid. You can see this in action in the demo below.
+                                </p>
+                                <p class="codepen" data-height="500" data-theme-id="light" data-default-tab="html,result" data-slug-hash="NWdbrzr" data-editable="true" data-user="web-dot-dev" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                    <span>See the Pen <a href="https://codepen.io/web-dot-dev/pen/NWdbrzr">
+                                    Learn CSS - A simple grid</a> by web.dev (<a href="https://codepen.io/web-dot-dev">@web-dot-dev</a>)
+                                    on <a href="https://codepen.io">CodePen</a>.</span>
+                                </p>
+                                <p>
+                                    The grid overlay in Chrome DevTools can help you understand the various parts of the grid.
+
+                                    Open the demo in Chrome. Inspect the element with the grey background, which has an ID of container. Highlight the grid by selecting the grid badge in the DOM, next to the .container element. Inside the Layout tab, select Display Line Numbers in the dropdown to see the line numbers on your grid.
+                                </p>
                             </div>
                         </div>
                     </div>
+
+
+                    <div class="ten">
+                        <h1>Auto-placement</h1>
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                        <div class="section">
+                            <h1>Placing items in columns </h1>
+
+                            <div class="semititle">
+                                <p>
+                                    The default behavior of grid layout is to place items along the rows. You can instead cause the items to place into columns using grid-auto-flow: column. You need to define row tracks otherwise the items will create intrinsic column tracks, and layout out all in one long row.
+
+                                    These values relate to the writing mode of the document. A row always runs in the direction a sentence runs in the writing mode of the document or component. In the next demo you can change mode the value of grid-auto-flow and the writing-mode property.
+                                </p>
+                                <br>
+                                <p class="codepen" data-height="500" data-theme-id="light" data-default-tab="html,result" data-slug-hash="PoWbWbr" data-editable="true" data-user="web-dot-dev" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                    <span>See the Pen <a href="https://codepen.io/web-dot-dev/pen/PoWbWbr">
+                                    Learn CSS - Grid auto flow</a> by web.dev (<a href="https://codepen.io/web-dot-dev">@web-dot-dev</a>)
+                                    on <a href="https://codepen.io">CodePen</a>.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>
     </main>
+
+
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
     <script>
         window.onscroll = function () {
             myFunction()
