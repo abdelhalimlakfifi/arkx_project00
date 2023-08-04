@@ -8,6 +8,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Gill Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -423,11 +424,13 @@ hr.dashed {
 .section {
     margin-left: 15rem;
     margin-right: 15rem;
+    width: 100%;
 }
 
 .semititle>p {
     font-size: 22px;
     text-align: justify;
+    
 }
 
 .semititle>img {
