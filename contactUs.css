@@ -1,7 +1,6 @@
 
 :root {
   --headerColor: #50769c;
-  background-color: #F1F1F1;
 }
 
 .meetUs {
@@ -13,11 +12,10 @@
   margin-bottom: 1%;
 }
 
-.containerOut {
+.containerOut  {
   padding: 1%;
   width: 80vw;
   height: 80vh;
-  background-color: #FFF;
   border-radius: 7px;box-shadow: 25px 1px 45px -5px rgba(196, 196, 196, 0.48);
   -webkit-box-shadow: 25px 1px 45px -5px rgba(196, 196, 196, 0.48);
   -moz-box-shadow: 25px 1px 45px -5px rgba(196, 196, 196, 0.48);
@@ -26,7 +24,7 @@
 }
 
 .disc { 
-  font-size: 48px;
+  font-size: 30px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -93,7 +91,7 @@ img {
 
 .links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 /*******************************************************************************/
@@ -105,7 +103,6 @@ footer {
   padding: 1%;
   width: 80vw;
   margin-bottom: 10px;
-  background-color: #FFF;
   border-radius: 7px;box-shadow: 25px 1px 45px -5px rgba(196, 196, 196, 0.48);
   -webkit-box-shadow: 25px 1px 45px -5px rgba(196, 196, 196, 0.48);
   -moz-box-shadow: 25px 1px 45px -5px rgba(196, 196, 196, 0.48);
