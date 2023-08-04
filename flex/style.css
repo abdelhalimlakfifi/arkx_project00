@@ -22,7 +22,15 @@ header {
   align-items: center;
 }
 
-.home > * {
+.icon {
+  width: 20px;
+  transition: ease-in 0.1s;
+  border: 50px;
+}
+
+.icon:hover {
+  width: 25px;
+  margin: 8px;
 }
 
 .navbar {
@@ -420,7 +428,7 @@ hr.dashed {
 }
 
 .section {
-  margin-left: 15rem;
+  margin-left: 3rem;
   margin-right: 15rem;
 }
 
@@ -470,4 +478,30 @@ pre[rel]::before {
   top: 0;
   height: 100%;
   writing-mode: vertical-lr;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+.footer {
+  padding: 1%;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.social {
+  text-align: center;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
 }

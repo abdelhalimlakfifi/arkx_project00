@@ -1,285 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="contactUs.css">
+    <link rel="stylesheet" href="contactUs.css" />
+    <link rel="stylesheet" href="style.css" />
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            font-family: "Open Sans";
-            box-sizing: border-box;
-            
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        body{
-            min-height: 100vh;
-            background-image: linear-gradient(to bottom, 
-            #015C92 ,  
-            #53A7DB ,
-            #53A7DB ,
-            #88CDF6 ,
-            #88CDF6 ,
-            #BCE6FF ); 
-            
-        }
+      body {
+        min-height: 100vh;
+        font-family: 'Gill Sans', sans-serif;
+      }
 
-        @keyframes popUp {
-            0% {
-                transform: scale(0);
-            }
-            60% {
-                transform: scale(1.1);
-            }
-            100% {
-                transform: scale(1);
-            }
+      @keyframes popUp {
+        0% {
+          transform: scale(0);
         }
+        60% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
 
-        .about-section{
-            background: url(./laptop.jpg) no-repeat left;
-            background-size: 55%;
-            overflow:hidden;
-            padding: 0px;
-            animation: popUp 1s ease;
-        }
-        .inner-container{
-            width: 55%;
-            float: right;
-            padding: 150px;
-        }
-        .inner-container h1{
-            margin-bottom: 30px;
-            font-size: 30px;
-            font-size: 900;
-        }
-        .text{
-            font-size: 13px;
-            color: #545454;
-            line-height: 30px;
-            text-align: justify;
-            margin-bottom: 40px;
-        }
-        .skills{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 8%;
-            font-weight: 700;
-            font-size: 13px;
-        }
-        .two{
-            display: grid;
-            grid-template-columns: 1fr;
-            font-weight: 700;
-            font-size: 13px;
-        }
-        .two p{
-            text-align: center;
-            font-weight: 700;
-            font-size: 13px;
-            padding: 65px;
-            color: #545454;
+      .about-section {
+        background: url(./laptop.jpg) no-repeat left;
+        background-size: 55%;
+        overflow: hidden;
+        padding: 0px;
+        animation: popUp 1s ease;
+      }
+      .inner-container {
+        width: 55%;
+        float: right;
+        padding: 150px;
+      }
+      .inner-container h1 {
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-size: 900;
+      }
+      .text {
+        font-size: 13px;
+        color: #545454;
+        line-height: 30px;
+        text-align: justify;
+        margin-bottom: 40px;
+      }
+      .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8%;
+        font-weight: 700;
+        font-size: 13px;
+      }
+      .two {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-weight: 700;
+        font-size: 13px;
+      }
+      .two p {
+        text-align: center;
+        font-weight: 700;
+        font-size: 13px;
+        padding: 65px;
+        color: #545454;
+      }
+      .two a {
+        text-align: center;
+        font-weight: 700;
+        font-size: 13px;
+        padding: 65px;
+      }
 
+      @media screen and (max-width: 1200px) {
+        .inner-container {
+          padding: 80px;
         }
-        .two a{
-            text-align: center;
-            font-weight: 700;
-            font-size: 13px;
-            padding: 65px;
-        }
+      }
 
-        @media screen and (max-width:1200px){
-            .inner-container{
-                padding: 80px;
-            }
-            
+      @media screen and (max-width: 1000px) {
+        .about-section {
+          background-size: 100%;
+          padding: 100px 40px;
         }
+        .inner-container {
+          width: 100%;
+        }
+      }
 
-        @media screen and (max-width:1000px){
-            .about-section{
-                background-size: 100%;
-                padding: 100px 40px;
-            }
-            .inner-container{
-                width: 100%;
-            }
+      @media screen and (max-width: 600px) {
+        .about-section {
+          padding: 0;
         }
-
-        @media screen and (max-width:600px){
-            .about-section{
-                padding: 0;
-            }
-            .inner-container{
-                padding: 60px;
-            }
+        .inner-container {
+          padding: 60px;
         }
-        .ourwhy{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            gap: 20%;
-            padding: 100px;
-            padding-top: 40px;
-        }
-        .ourWhySection{
-            padding-top: 50px;
-        }
-        .titre {
-            text-align: center;
-            font-size: 48px;
-            text-transform: uppercase;
-            font-family: "open sans";
-        }
-        .why{
-            text-decoration: underline;
-        }
-
+      }
+      .ourwhy {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20%;
+        padding: 100px;
+        padding-top: 40px;
+      }
+      .ourWhySection {
+        padding-top: 50px;
+      }
+      .titre {
+        text-align: center;
+        font-size: 48px;
+        text-transform: uppercase;
+      }
+      .why {
+        text-decoration: underline;
+      }
     </style>
-</head>
-<body>
-    <main >
+  </head>
+  <body>
+    <header>
+      <div class="logos">
+        <a href="../index.html">
+          <img class="logo" src="./assets/jakarta.svg" alt="jartka logo" />
+        </a>
+        <img class="logo" src="./assets/ark.svg" alt="arkx logo" />
+      </div>
+      <div class="navbar">
+        <div class="home">
+          <a href="../index.html">
+            <img class="icon" src="./assets/home.svg" alt="" srcset="" />
+          </a>
 
-        
-        <div class="about-section">
-            <div class="inner-container" >
-                <h1>All about Jakarta</h1>
-                <p class="text">
-                    Since our founding in 2001, Jakarta has offered web developement informations that continually innovate new ways to deliver on our mission: empowering people to develop their skills online.
-                </p>
-                <div class="skills">
-                    <ol>Comprehensive tools</ol> 
-                    <ol>W3schools.org-recommended</ol>
-                    <ol>Trusted by 2M users</ol>
-                    <ol>Coding</ol>
-                </div>
-
-            </div>
-
-           
-        </div><br><br>
-        <div class="two">
-            <h2 class="titre"><b>We're here to help you get online.</b></h2>
-            <p>Jakarta is a popular online platform that provides web development tutorials and references for various web technologies. 
-                Discover how Jakarta's expertise, reliability, and innovation can help you achieve your online goals.<br />
-            <br />
-            <a href="https://www.google.com">Learn more today.</a></p>
+          <img class="icon" src="./assets/search.svg" alt="" srcset="" />
         </div>
 
-        <section class="ourWhySection">
-            <h2 class="titre">Our why</h2>
-            <div class="ourwhy" >
-                <div class="salmawhy">
-                    <h1 class="why">Salma's why</h1>
-                    <p>
-                        I am motivated by my passion that is web developpement and problem solving, and my curiosity to new technologies and my interest in 
-                        creating web applications that are helpful as i am also drawn to itellectual challenges
-                    </p>
-                </div>
-    
-                <div class="salahwhy">
-                    <h1 class="why">Salah's why</h1>
-                    <p>Build a strong technical foundation
-                    Learn essential skills 
-                    Gain practical experience through projects
-                    Grow my network and find career opportunities
-                    Land that first job to kickstart my career
-                    Continue learning and progressing professionally
-                    </p>
-                </div>
-    
-    
-                <div class="halimwhy">
-                    <h1 class="why ">Halim's why</h1>
-                    <p>
-                        From my childhood start the curiosity of how the games built and specialy how can a computer 
-                        win me on chessgames , and there it start the adventure of being a long-life learner and
-                        keeping with updates on Digital stuff, for building very helpful powered apps. 
-                    </p>
-                </div>
-    
-    
-                <div class="rachidwhy">
-                    <h1 class="why">Rachid's why</h1>
-                    <p>
-                        Passionate about programming and computers in general
-                        Doesn't feel like work
-                        Need to secure future to build a family
-                        Gain professional experience 
-                        Get used to work with a team
-                    </p>
-                </div>
-            </div>
-        </section>
+        <div class="flexgrid">
+          <a href="../flex/index.html"
+            ><img class="icon" src="./assets/flexicon.svg" alt="" srcset=""
+          /></a>
 
-    <section class="meetUs">
+          <a href="../grid/index.html"
+            ><img class="icon" src="./assets/gridicon.svg" alt="" srcset=""
+          /></a>
+        </div>
+        <div class="aboutus">
+          <img class="icon" src="./assets/info.svg" alt="" srcset="" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="about-section">
+        <div class="inner-container">
+          <h1 style="font-family: 'Courier New', Courier, monospace">
+            All about Jakarta
+          </h1>
+          <p style="font-size: 20px; font-weight: 500" class="text">
+            Since our founding in 2001, Jakarta has offered web developement
+            informations that continually innovate new ways to deliver on our
+            mission: empowering people to develop their skills online.
+          </p>
+          <div style="font-size: 20px; font-weight: 500" class="skills">
+            <ol>
+              Comprehensive tools
+            </ol>
+            <ol>
+              W3schools.org-recommended
+            </ol>
+            <ol>
+              Trusted by 2M users
+            </ol>
+            <ol>
+              Coding
+            </ol>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+      <div class="two">
+        <h2
+          style="font-family: 'Courier New', Courier, monospace"
+          class="titre"
+        >
+          We're here to help you get online.
+        </h2>
+        <p style="font-size: 20px; font-weight: 500">
+          Jakarta is a popular online platform that provides web development
+          tutorials and references for various web technologies. Discover how
+          Jakarta's expertise, reliability, and innovation can help you achieve
+          your online goals.<br />
+          <br />
+          <a
+            style="font-size: 20px; font-weight: 500"
+            href="https://www.google.com"
+            >Learn more today.</a
+          >
+        </p>
+      </div>
+
+      <section class="meetUs">
         <div class="containerOut">
-            <div class="disc">
-                <h2 class="titre">Meet our amazing team members</h2>
+          <div class="disc">
+            <h2
+              style="font-family: 'Courier New', Courier, monospace"
+              class="titre"
+              class="titre"
+            >
+              Meet our amazing team members
+            </h2>
+          </div>
+          <div class="pic">
+            <div class="picCon picCont">
+              <div class="teamimg">
+                <img src="rachid.jpg" class="teampic" />
+              </div>
+              <div class="fname">
+                <span class="fName">Rachid</span>
+                <span class="lName"> handaoui</span>
+              </div>
+              <div class="links">
+                <a href="" class="link"
+                  ><img class="icon" src="./assets/email.svg"
+                /></a>
+                <a href="" class="link"
+                  ><img class="icon" src="./assets/github.svg"
+                /></a>
+                <a href="" class="link"
+                  ><img class="icon" src="./assets/linkedin.svg"
+                /></a>
+              </div>
             </div>
-            <div class="pic">
-                <div class="picCon picCont">
-                    <div class="teamimg"><img src="rachid.jpg" class="teampic"></div>
-                        <div class="fname">
-                            <span class="fName">Rachid</span>
-                            <span  class="lName"> handaoui</span>
-                        </div>
-                        <div class="links">
-                            <a href="" class="link"><img class="icon" src="./assets/email.svg"></a>
-                            <a href="" class="link"><img class="icon" src="./assets/github.svg"></a>
-                            <a href="" class="link"><img class="icon" src="./assets/linkedin.svg"></a>
-                        </div>
-                    </div>
-                    <div class="picCon picCont">
-                        <div class="teamimg"><img src="salmaa.jpg" class="teampic"></div>
-                            <div class="fname">
-                            <span class="fName">Salma</span>
-                            <span  class="lName"> EL halba</span>
-                        </div>
-                        <div class="links">
-                            <a href="" class="link"><img class="icon" src="./assets/email.svg"></a>
-                            <a href="" class="link"><img class="icon" src="./assets/github.svg"></a>
-                            <a href="" class="link"><img class="icon" src="./assets/linkedin.svg"></a>
-                        </div>
-                    </div>
-                    <div class="picCon picConb">
-                        <div class="teamimg"><img src="halim.jpg" class="teampic"></div>
-                        <div class="fname">
-                            <span class="fName">Abdelhalim</span>
-                            <span  class="lName"> Lakfifi</span>
-                        </div>
-                        <div class="links">
-                            <a href="" class="link"><img class="icon" src="./assets/email.svg"></a>
-                            <a href="" class="link"><img class="icon" src="./assets/github.svg"></a>
-                            <a href="" class="link"><img class="icon" src="./assets/linkedin.svg"></a>
-                        </div>
-                    </div>
-                    <div class="picCon picConb">
-                        <div class="teamimg"><img src="salah.jpg" class="teampic"></div>
-                            <div class="fname">
-                            <span class="fName">Salah Eddine</span>
-                            <span  class="lName"> El menyiy</span>
-                        </div>
-                        <div class="links">
-                            <a href="" class="link"><img class="icon" src="./assets/email.svg"></a>
-                            <a href="" class="link"><img class="icon" src="./assets/github.svg"></a>
-                            <a href="" class="link"><img class="icon" src="./assets/linkedin.svg"></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- <a href="mailto:name@email.com">Link text</a> -->
+            <div class="picCon picCont">
+              <div class="teamimg">
+                <img src="salmaa.jpg" class="teampic" />
+              </div>
+              <div class="fname">
+                <span class="fName">Salma</span>
+                <span class="lName"> EL halba</span>
+              </div>
+              <div class="links">
+                <a href="" class="link"
+                  ><img class="icon" src="./assets/email.svg"
+                /></a>
+                <a href="" class="link"
+                  ><img class="icon" src="./assets/github.svg"
+                /></a>
+                <a href="" class="link"
+                  ><img class="icon" src="./assets/linkedin.svg"
+                /></a>
+              </div>
             </div>
-        </section>
+            <div class="picCon picConb">
+              <div class="teamimg"><img src="halim.jpg" class="teampic" /></div>
+              <div class="fname">
+                <span class="fName">Abdelhalim</span>
+                <span class="lName"> Lakfifi</span>
+              </div>
+              <div class="links">
+                <a href="" class="link"
+                  ><img class="icon" src="./assets/email.svg"
+                /></a>
+                <a href="" class="link"
+                  ><img class="icon" src="./assets/github.svg"
+                /></a>
+                <a href="" class="link"
+                  ><img class="icon" src="./assets/linkedin.svg"
+                /></a>
+              </div>
+            </div>
+            <div class="picCon picConb">
+              <div class="teamimg"><img src="salah.jpg" class="teampic" /></div>
+              <div class="fname">
+                <span class="fName">Salah Eddine</span>
+                <span class="lName"> El menyiy</span>
+              </div>
+              <div class="links">
+                <a href="" class="link"
+                  ><img class="icon" src="./assets/email.svg"
+                /></a>
+                <a href="" class="link"
+                  ><img class="icon" src="./assets/github.svg"
+                /></a>
+                <a href="" class="link"
+                  ><img class="icon" src="./assets/linkedin.svg"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <!-- <a href="mailto:name@email.com">Link text</a> -->
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="footer">
-            <div class="social">
-                <a href="" class="link"><img class="icon" src="./assets/email.svg"></a>
-                <a href="" class="link"><img class="icon" src="./assets/github.svg"></a>
-                <a href="" class="link"><img class="icon" src="./assets/linkedin.svg"></a>
-            </div>
-            <p class="copyright">Jakarta © 2023</p>
+      <div class="footer">
+        <div class="social">
+          <a href="" class="link"
+            ><img class="icon" src="./assets/email.svg"
+          /></a>
+          <a href="" class="link"
+            ><img class="icon" src="./assets/github.svg"
+          /></a>
+          <a href="" class="link"
+            ><img class="icon" src="./assets/linkedin.svg"
+          /></a>
         </div>
+        <p class="copyright">Jakarta © 2023</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

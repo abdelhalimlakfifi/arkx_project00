@@ -1,9 +1,6 @@
-
 :root {
   --headerColor: #50769c;
 }
-
-
 
 html {
   color: #000;
@@ -14,14 +11,16 @@ html {
   margin-bottom: 1%;
 }
 
-body  {
-  padding: 1%;
+body {
   width: 80vw;
   border-radius: 7px;
   display: grid;
   grid-template-columns: 1fr;
 }
 
+main {
+  padding: 2%;
+}
 
 .meetUs {
   color: #000;
@@ -31,14 +30,14 @@ body  {
   margin-bottom: 1%;
 }
 
-.containerOut  {
+.containerOut {
   padding: 1%;
   height: 80vh;
   display: grid;
   grid-template-columns: 1fr;
 }
 
-.disc { 
+.disc {
   font-size: 30px;
   text-align: center;
   display: flex;
@@ -60,10 +59,11 @@ img {
   grid-template-columns: 1fr;
 }
 
-.lName, 
+.lName,
 .fName {
   font-size: 1.2rem;
   font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .lName {
@@ -78,7 +78,8 @@ img {
   width: 30px;
 }
 
-.fname,.link {
+.fname,
+.link {
   text-align: center;
 }
 
@@ -122,16 +123,16 @@ footer {
 }
 
 .social {
-  text-align:center;
-  padding-bottom:25px;
+  text-align: center;
+  padding-bottom: 25px;
   display: flex;
   justify-content: space-around;
 }
 
 footer .copyright {
-  margin-top:15px;
-  text-align:center;
-  font-size:13px;
-  color:#aaa;
-  margin-bottom:0;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
 }
