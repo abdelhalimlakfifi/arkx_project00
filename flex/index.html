@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logos">
+        <a href="../index.html">
+          <img class="logo" src="./assets/jakarta.svg" alt="jartka logo" />
+        </a>
+        <img class="logo" src="./assets/ark.svg" alt="arkx logo" />
+      </div>
+      <div class="navbar">
+        <div class="home">
+          <a href="../index.html">
+            <img class="icon" src="./assets/home.svg" alt="" srcset="" />
+          </a>
+
+          <img class="icon" src="./assets/search.svg" alt="" srcset="" />
+        </div>
+
+        <div class="flexgrid">
+          <a href="../flex/index.html"
+            ><img class="icon" src="./assets/flexicon.svg" alt="" srcset=""
+          /></a>
+
+          <a href="../grid/index.html"
+            ><img class="icon" src="./assets/gridicon.svg" alt="" srcset=""
+          /></a>
+        </div>
+        <div class="aboutus">
+          <img class="icon" src="./assets/info.svg" alt="" srcset="" />
+        </div>
+      </div>
+    </header>
+
+    <main class="mainOverview">
+      <div id="navbar">
+        <a class="active" href="#flexoverview">Flexbox</a>
+        <a class="active" href="#overview">Overview</a>
+        <a href="#terminology">Flex terminology</a>
+        <a href="#properties">Properties</a>
+      </div>
+
+      <div class="main">
+        <div class="one" id="flexoverview">
+          <h1 class="gridTitle">Flex</h1>
+        </div>
+        <div style="text-align: center">
+          <div class="quote">
+            <blockquote>
+              <p style="padding: 10px">
+                The Flexible Box Layout Model (flexbox) is a layout model
+                designed for one-dimensional content. It excels at taking a
+                bunch of items which have different sizes, and returning the
+                best layout for those items.
+              </p>
+              <p style="margin: 10px">
+                This is the ideal layout model for this sidebar pattern. Flexbox
+                not only helps lay the sidebar and content out inline, but where
+                there's not enough space remaining, the sidebar will break onto
+                a new line. Instead of setting rigid dimensions for the browser
+                to follow, with flexbox, you can instead provide flexible
+                boundaries to hint how the content could display.
+              </p>
+              <!-- <cite>Samuel Beckett</cite> -->
+            </blockquote>
+          </div>
+        </div>
+        <div class="container">
+          <div class="flex mastringCss">
+            <img
+              style="width: 600px; padding: 30px"
+              src="./assets/flexcross.png"
+              alt=""
+            />
+            <div class="text1_container">
+              <h2>CSS Flexbox : Harmony of two axes</h2>
+              <p class="text1">
+                When working with flexbox you need to think in terms of two axes
+                — the main axis and the cross axis. The main axis is defined by
+                the flex-direction property, and the cross axis runs
+                perpendicular to it. Everything we do with flexbox refers back
+                to these axes, so it is worth understanding how they work from
+                the outset.
+              </p>
+            </div>
+          </div>
+
+          <div id="overview" class="overviewContainer">
+            <h3>Overview</h3>
+
+            <p class="overviewText">
+              The flexbox display is very straightforward. You align items
+              according to either axes using already defined properties
+            </p>
+
+            <div class="parent">
+              <div class="div1">
+                <div class="task" draggable="true">
+                  <div class="tags">
+                    <span class="tag"> 1 </span>
+                  </div>
+                  <p>You can choose the direction to align your components</p>
+                </div>
+              </div>
+
+              <div class="div2">
+                <div class="task" draggable="true">
+                  <div class="tags">
+                    <span class="tag"> 2 </span>
+                  </div>
+                  <p>
+                    Direct children of the flex container can be controlled from
+                    the parent.
+                  </p>
+                </div>
+              </div>
+
+              <div class="div3">
+                <div class="task" draggable="true">
+                  <div class="tags">
+                    <span class="tag"> 3 </span>
+                  </div>
+                  <p>You can control children individually as well.</p>
+                </div>
+              </div>
+
+              <div class="div4">
+                <div class="task" draggable="true">
+                  <div class="tags">
+                    <span class="tag"> 4 </span>
+                  </div>
+                  <p>
+                    You can choose many ways in which you want to spread the
+                    children components in a parent container
+                  </p>
+                </div>
+              </div>
+
+              <div class="div5">
+                <div class="task" draggable="true">
+                  <div class="tags">
+                    <span class="tag"> 5 </span>
+                  </div>
+                  <p>You can choose which axis will be the main one.</p>
+                </div>
+              </div>
+
+              <div class="div6">
+                <div class="task" draggable="true">
+                  <div class="tags">
+                    <span class="tag"> 6 </span>
+                  </div>
+                  <p>
+                    Flex is very powerful to control children inside a parent
+                    container in a given direction
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="dashed" />
+
+          <div>
+            <div class="ten">
+              <h1>Flex terminology</h1>
+            </div>
+
+            <div
+              id="terminology"
+              style="display: flex; justify-content: center"
+            >
+              <div class="section">
+                <h1>Axis</h1>
+                <div class="semititle">
+                  <p>
+                    Flex allows us to choose which axis we want to work with.
+                  </p>
+                  <br />
+                  <p>
+                    The main axis is defined by <i> <b>flex-direction</b></i
+                    >, which has four possible values:
+                    <b>row; row-reverse; column; column-reverse</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div id="properties" style="display: flex; justify-content: center">
+              <div class="section">
+                <h1>Justify Content</h1>
+
+                <div class="semititle">
+                  <p>
+                    Justify content is one of the two most important and used
+                    properties, as it allow us to place children in the main
+                    axis.
+                  </p>
+                  <img src="./assets/flexrow.png" alt="" />
+                  <iframe
+                    width="100%"
+                    height="480"
+                    src="https://mdn.github.io/css-examples/flexbox/basics/the-flex-container.html"
+                    loading="lazy"
+                  ></iframe>
+                  <br />
+                </div>
+              </div>
+            </div>
+            <div style="display: flex; justify-content: center">
+              <div class="section">
+                <h1>Align Items</h1>
+                <div class="semititle">
+                  <p>
+                    align-items is the other important property, it allows us to
+                    place children according to the cross axis
+                  </p>
+                  <img src="./assets/flexcolumn.png" alt="" />
+                  <iframe
+                    width="100%"
+                    height="480"
+                    src="https://mdn.github.io/css-examples/flexbox/basics/the-flex-container.html"
+                    loading="lazy"
+                  ></iframe>
+                  <br />
+                </div>
+              </div>
+            </div>
+            <div style="display: flex; justify-content: center">
+              <div class="section">
+                <h1>Gap</h1>
+
+                <div class="semititle">
+                  <p>
+                    Similar to grid, this property allow us to define the
+                    distance between each child in the main direction
+                  </p>
+                  <br />
+
+                  <img src="./assets/gap.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var navbar = document.getElementById('navbar');
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add('sticky');
+        } else {
+          navbar.classList.remove('sticky');
+        }
+      }
+    </script>
+  </body>
+</html>
