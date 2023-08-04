@@ -3,7 +3,9 @@
   --headerColor: #50769c;
 }
 
-.meetUs {
+
+
+html {
   color: #000;
   margin: 0;
   width: 100vw;
@@ -12,13 +14,26 @@
   margin-bottom: 1%;
 }
 
-.containerOut  {
+body  {
   padding: 1%;
   width: 80vw;
+  border-radius: 7px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+
+.meetUs {
+  color: #000;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+
+.containerOut  {
+  padding: 1%;
   height: 80vh;
-  border-radius: 7px;box-shadow: 25px 1px 45px -5px rgba(196, 196, 196, 0.48);
-  -webkit-box-shadow: 25px 1px 45px -5px rgba(196, 196, 196, 0.48);
-  -moz-box-shadow: 25px 1px 45px -5px rgba(196, 196, 196, 0.48);
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -101,11 +116,7 @@ footer {
 }
 .footer {
   padding: 1%;
-  width: 80vw;
   margin-bottom: 10px;
-  border-radius: 7px;box-shadow: 25px 1px 45px -5px rgba(196, 196, 196, 0.48);
-  -webkit-box-shadow: 25px 1px 45px -5px rgba(196, 196, 196, 0.48);
-  -moz-box-shadow: 25px 1px 45px -5px rgba(196, 196, 196, 0.48);
   display: grid;
   grid-template-columns: 1fr;
 }
